@@ -1,0 +1,77 @@
+
+js assignment day-6
+
+
+
+((((1))))change background color every five second
+
+
+function change(i) {  
+   var doc = document.getElementById("background");  
+   var color =[ "black", "blue", "brown", "green"];  
+   for(i=0; i<color.length; i++){  
+        doc.style.backgroundColor = color[i];  
+        alert("my color is "+ color[i]);  
+/*if (i>=color.length){i=0;}*/  
+    }
+ }  
+
+
+
+((((2)))))How to make a simple 5 line JavaScript Multiplication table for loop
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication Tables</title>
+</head>
+<body>
+	<p>Enter a number below to see its multiplication table.</p>
+	<input type="text" name="txtNumber" id="txtNumber" placeholder="Enter a number" />
+	<br />
+	<br />
+	
+	<button onclick="DisplayTable();">Click Me</button>
+	<div id="multiTable"></div>
+	
+<script language="javascript">
+function DisplayTable(){
+	for (var i = 1; i <= 10; i++){
+  for (var i = 1, var j = 0; (i+j) <= 10; i++, j += i) {
+     System.out.print("\t"+i*j);
+  System.out.println(); 
+}
+}
+}
+</script>
+
+</body>
+</html>
+
+
+((((3))))accept the user name and display the name
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   </head>
+   <body>
+   <form method='POST'>
+   <h2>Please input your name:</h2>
+ <input type="text" name="name">
+ <input type="submit" value="Submit Name">
+ </form>
+<?php
+//Retrieve name from query string and store to a local variable
+$name = $_POST['name'];
+echo "<h3> Hello $name </h3>";
+?>
+</body>
+</html>
+
+
